@@ -1,95 +1,28 @@
 @font-face {
-   font-family: 'atari_st';
-   src: url('fonts/atarist8x16systemfont-webfont.eot');
-   src: url('fonts/atarist8x16systemfont-webfont.eot?#iefix')
-   format('embedded-opentype'),
-      url('fonts/atarist8x16systemfont-webfont.woff') format('woff'),
-      url('fonts/atarist8x16systemfont-webfont.ttf') format('truetype'),
-      url('fonts/atarist8x16systemfont-webfont.svg#atari_st_8x16_system_fontMd')
-      format('svg');
-   font-weight: normal;
-   font-style: normal;
+  font-family: 'atari_st';
+  src: url('fonts/atarist8x16systemfont-webfont.eot');
+  src: url('fonts/atarist8x16systemfont-webfont.eot?#iefix')
+  format('embedded-opentype'),
+  url('fonts/atarist8x16systemfont-webfont.woff') format('woff'),
+  url('fonts/atarist8x16systemfont-webfont.ttf') format('truetype'),
+  url('fonts/atarist8x16systemfont-webfont.svg#atari_st_8x16_system_fontMd')
+  format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-html{
-        font-family: atari_st;
+html {
+  font-family: atari_st;
 }
 
-body{
-    background: url("images/bg.png");
-    margin: 0;
+body {
+  background: url("images/bg.png");
+  margin: 0;
 }
 
-p{
-        padding-left: 20px;
-        padding-right: 20px;
-}
-
-.container{
-        border: solid 1px #000000;
-        width: 50%;
-        margin: 0 auto;
-        text-align: left;
-        padding: 2px;
-        background: #ffffff;
-        position: relative;
-        top: 50px;
-}
-
-.inner_container {
-        border: solid 2px #000000;
-        font-size: 12pt;
-
-
-}
-
-.header{
-        text-align: left;
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 12pt;
-}
-
-.button{
-        text-align: right;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-}
-
-input{
-        border: solid 4px #000000;
-        background: #ffffff;
-        font-family: atari_st;
-        font-size: 12pt;
-        padding: 5px;
-        color: #000000;
-}
-
-img{
-    float: right;
-}
-
-#menu_bar{
-    position: absolute;
-    border-bottom: solid 1px #000000;
-    width: 100%;
-    background: #ffffff;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-#drives{
-    position: absolute;
-    top: 10px;
-
-}
-
-#footer {
-   position:absolute;
-   bottom:0;
-   width:99%;
-   height:45px;   /* Height of the footer */
+p {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 ul {
@@ -99,4 +32,68 @@ ul {
 
 li {
   padding-bottom: 50px;
+}
+
+input {
+  border: solid 4px #000000;
+  background: #ffffff;
+  font-family: atari_st;
+  font-size: 12pt;
+  padding: 5px;
+  color: #000000;
+}
+
+img {
+  float: right;
+}
+
+.container {
+  border: solid 1px #000000;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2px;
+  background: #ffffff;
+  position: relative;
+  top: 50px;
+}
+
+.inner_container {
+  border: solid 2px #000000;
+  font-size: 12pt;
+}
+
+.header {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 12pt;
+}
+
+.button {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#menu_bar {
+  position: absolute;
+  border-bottom: solid 1px #000000;
+  width: 100%;
+  background: #ffffff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#drives {
+  position: absolute;
+  top: 10px;
+}
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:99%;
+  height:45px;
 }
