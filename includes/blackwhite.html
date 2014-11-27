@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles/blackwhite.css">
+<meta charset="utf-8">
+<meta name="description" content="Kleine Webseite die zufällig den Königstext vom Atari ST Spiel Ballerburg ausgibt">
+<meta name="keywords" content="Atari ST, Ballerburg, König">
+<meta name="author" content="ragnar">
+<title>Der König meint:</title>
+</head>
+<body>
+<div id="menu_bar">&nbsp;&nbsp;DESK&nbsp;&nbsp;DATEI&nbsp;&nbsp;INDEX&nbsp;&nbsp;EXTRAS</div>
+<div id="drives">
+    <ul>
+        <li><img src="images/blackwhite/lw_a.png" alt="Atari Laufwerk A"></li>
+        <li><img src="images/blackwhite/lw_b.png" alt="Atari Laufwerk B"></li>
+        <li><img src="images/blackwhite/lw_c.png" alt="Atari Laufwerk C"></li>
+        <li><img src="images/blackwhite/lw_d.png" alt="Atari Laufwerk D"></li>
+        <li><img src="images/blackwhite/lw_e.png" alt="Atari ROM Modul"></li>
+        <li><img src="images/blackwhite/drucker.png" alt="Atari Drucker"></li>
+        <li><img src="images/king.png" alt="Atari Programm"></li>
+    </ul>
+</div>
+        <div class="container">
+                <div class="inner_container">
+                        
+                        <div class="header">Der König meint:</div>
+                        <p><?php echo $input[$rand_keys[0]] . "\n"; ?></p>
+                        <div class="button">
+                                <form method="POST" action="index.php?page=sw" onSubmit="window.location.reload()">
+                                        <input name="Submit" type="submit" value="Demütig zur Kenntnis genommen">
+                                </form>
+                        </div>
+                </div>
+        </div>
+        <div id="footer">
+            <a href='javascript:window.alert("Sorry, konnte nicht wiederstehen!");'>
+            <img src="images/blackwhite/trash.png" alt="Atari Trashbin">
+        </a>
+        </div>
+</body>
+</html>

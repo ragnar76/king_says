@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'atari_st';
-  src: url('fonts/atarist8x16systemfont-webfont.eot');
-  src: url('fonts/atarist8x16systemfont-webfont.eot?#iefix')
+  src: url('../fonts/atari_st.eot');
+  src: url('../fonts/atari_st.eot?#iefix')
   format('embedded-opentype'),
-  url('fonts/atarist8x16systemfont-webfont.woff') format('woff'),
-  url('fonts/atarist8x16systemfont-webfont.ttf') format('truetype'),
-  url('fonts/atarist8x16systemfont-webfont.svg#atari_st_8x16_system_fontMd')
-  format('svg');
+    url('../fonts/atari_st.woff') format('woff'),
+    url('../fonts/atari_st.ttf') format('truetype'),
+    url('../fonts/atari_st.svg#atari_st_8x16_system_fontMd')
+    format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,13 +16,26 @@ html {
 }
 
 body {
-  background: url("images/bg.png");
+  background: #00e600;
   margin: 0;
 }
 
 p {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+input {
+  border: solid 2px #000000;
+  background: #d9d9d9;
+  font-family: atari_st;
+  font-size: 12pt;
+  padding: 5px;
+  color: #000000;
+}
+
+img {
+  float: right;
 }
 
 ul {
@@ -34,26 +47,13 @@ li {
   padding-bottom: 50px;
 }
 
-input {
-  border: solid 4px #000000;
-  background: #ffffff;
-  font-family: atari_st;
-  font-size: 12pt;
-  padding: 5px;
-  color: #000000;
-}
-
-img {
-  float: right;
-}
-
 .container {
-  border: solid 1px #000000;
+  border: solid 2px #000000;
   width: 50%;
   margin: 0 auto;
   text-align: left;
   padding: 2px;
-  background: #ffffff;
+  background: #d9d9d9;
   position: relative;
   top: 50px;
 }
@@ -61,6 +61,7 @@ img {
 .inner_container {
   border: solid 2px #000000;
   font-size: 12pt;
+  background: #d9d9d9;
 }
 
 .header {
@@ -75,7 +76,7 @@ img {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-}
+  }
 
 #menu_bar {
   position: absolute;
